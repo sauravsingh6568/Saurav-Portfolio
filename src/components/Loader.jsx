@@ -28,7 +28,7 @@ const Loader = ({ onComplete }) => {
         ease: "power3.inOut",
       }
     ).to(sRef.current, {
-      scale: 1,
+      scale: 2,
       duration: 0.5,
       ease: "power3.out",
     });
