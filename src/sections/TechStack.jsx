@@ -2,6 +2,7 @@ import TechIcon from "../components/TechIcon";
 import TitleHeader from "../components/TitleHeader";
 import { iconsList } from "../constants";
 
+
 const TechStack = () => {
   return (
     <div className="w-full h-full">
