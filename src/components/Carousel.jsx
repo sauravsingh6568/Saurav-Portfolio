@@ -34,13 +34,16 @@ const Carousel = () => {
         <div className="absolute w-full -left-[43vw] top-0">
           <div className="flex w-full lg:h-[60vh] md:h-[40vh] h-[60vh] items-center gap-[3vw]">
             {slides.map((slide, index) => (
-              <div
+              <a
+                href={slide.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="slider-item w-[60vw] h-full flex-none relative"
                 key={index}
               >
                 <img
                   src={slide.img}
-                  alt="slide"
+                  alt={slide.title}
                   className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute w-full h-20 bottom-0 left-0 bg-black-300 bg-opacity-90 px-5">
@@ -65,11 +68,12 @@ const Carousel = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
       </div>
+
       <div className="mt-10 text-white-50 flex justify-end gap-5 md:-translate-x-32 -translate-x-5">
         <div
           onClick={prevSlide}
@@ -81,7 +85,7 @@ const Carousel = () => {
           onClick={nextSlide}
           className="rounded-full cursor-pointer bg-blue-50 hover:bg-pink-100 active:scale-90 transition-all w-12 h-12 flex-center"
         >
-          <img src="/images/CaretRight.svg" alt="Right" className="w-5 h-5" />
+          <img src="/images/CaretRight.svg" alt="right" className="w-5 h-5" />
         </div>
       </div>
     </div>

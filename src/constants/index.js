@@ -103,13 +103,13 @@ const slides = [
   {
     id: 2,
     title: "Spotify-Frontend",
-    img: "/images/p3.png",
+    img: "/images/Spotify-Frontend.png",
     link: "https://spotifyclone-react.netlify.app/",
   },
   {
     id: 3,
     title: "Blimp.gr",
-    img: "/images/Spotify-Frontend.png",
+    img: "/images/p4.png",
     link: "https://example.com/project-four",
   },
   {
